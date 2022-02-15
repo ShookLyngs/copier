@@ -1,0 +1,44 @@
+{
+  "name": "copier",
+  "version": "0.9.0",
+  "description": "Simple clipboard function, written in TypeScript.",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "browser": "umd/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "es",
+    "cjs",
+    "umd",
+    "types"
+  ],
+  "scripts": {
+    "clean": "rimraf cjs umd es types",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:local": "npm run clean && npm run build:package",
+    "build:package": "npm run build:es & npm run build:umd & npm run build:cjs",
+    "build:es": "tsc --outDir es",
+    "build:umd": "tsc --module umd --outDir umd",
+    "build:cjs": "tsc --module commonjs --outDir cjs"
+  },
+  "author": "ShookLyngs",
+  "homepage": "https://github.com/ShookLyngs/copier",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShookLyngs/copier"
+  },
+  "keywords": [
+    "text",
+    "copy",
+    "clipboard",
+    "typescript"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "clipboard": "^2.0.10"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  }
+}
