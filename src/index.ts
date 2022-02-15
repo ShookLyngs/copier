@@ -1,4 +1,5 @@
 import Clipboard from 'clipboard';
+export { default as Clipboard } from 'clipboard';
 
 export interface CopyTextOptions extends Clipboard.Options {
   appendToBody: boolean;
