@@ -4,8 +4,8 @@
   <img src="https://github.com/ShookLyngs/text-copier/actions/workflows/publish.yml/badge.svg" alt="">
 </h1>
 
-Simple clipboard function, written in TypeScript.
-
+Simple clipboard function, written in TypeScript.  
+Wrapped `clipboard` package functions to make the action easier to complete.
 
 ## Installation
 ```shell
